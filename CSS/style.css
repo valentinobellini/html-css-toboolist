@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: montserrat;
+    list-style-type: none
 }
 
 body {
@@ -26,7 +27,7 @@ header img {
 
 header span {
     color: black;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 800;
 }
 
@@ -34,12 +35,12 @@ header span {
 /* main body style */
 main {
     width: 80%;
-    height: 500px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
     border-radius: 1%;
     margin-top: 50px;
+    padding-bottom: 80px;
 }
 
 .container {
@@ -47,6 +48,7 @@ main {
     margin-left: 50px;
 }
 
+/* button section */
 button {
     border: 0;
     border-radius: 10%;
@@ -54,7 +56,7 @@ button {
 }
 
 #task_button {
-    background-color: rgb(139, 208, 255);
+    background-color: rgb(59, 172, 247);
     color: white;
     margin-right: 10px;
 }
@@ -65,3 +67,58 @@ button {
     border: 1px solid gray;
 }
 
+/* to do section */
+span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+section span {
+    display: block;
+    margin: 40px 0px 20px;
+}
+
+section span::before {
+    content: "\25BC";
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  li {
+    margin: 8px;
+  }
+
+  .task_done::before {
+    content: "\2714";
+    color: green;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 12px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .task::before {
+    content: "\2715";
+    color: red;
+    border: 1px solid;
+    border-radius: 450%;
+    padding: 3px;
+    font-size: 12px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .task .task_done::before {
+
+  }
+
+  .task_section {
+
+  }
+
+  .task, .task_done {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
