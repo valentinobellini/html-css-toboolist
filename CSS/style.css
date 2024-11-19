@@ -17,18 +17,21 @@ body {
 header {
     background-color: white;
     height: 100px;
+    line-height: 100px;
 }
 
 header img {
     height: 80px;
     padding-left: 10px;
     padding-top: 10px;
+    /* vertical-align: middle; */
 }
 
 header span {
     color: black;
     font-size: 50px;
     font-weight: 800;
+    vertical-align: bottom;
 }
 
 
@@ -84,17 +87,13 @@ section span::before {
     display: inline-block;
   }
 
-  li {
-    margin: 8px;
-  }
-
   .task_done::before {
     content: "\2714";
     color: green;
     border: 1px solid;
     border-radius: 50%;
     padding: 3px;
-    font-size: 12px;
+    font-size: 9px;
     margin-right: 10px;
     display: inline-block;
   }
@@ -103,22 +102,50 @@ section span::before {
     content: "\2715";
     color: red;
     border: 1px solid;
-    border-radius: 450%;
+    border-radius: 50%;
     padding: 3px;
-    font-size: 12px;
+    font-size: 9px;
     margin-right: 10px;
     display: inline-block;
   }
 
-  .task .task_done::before {
-
-  }
-
-  .task_section {
-
-  }
-
   .task, .task_done {
     margin-top: 20px;
-    margin-left: 10px;
   }
+
+
+  /* labels style */
+.label {
+    height: 20px;
+    border-radius: 20px;
+    height: 100%;
+    line-height: 100%;
+    padding: 8px;
+    color: white;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+.editorial {
+    background-color: rgb(59, 172, 247);
+}
+
+.q1_goals {
+    background-color: blueviolet;
+}
+
+.recruiting {
+    background-color: rgb(52, 179, 73);
+}
+
+.mobile {
+    background-color: rgb(255, 195, 85);
+}
+
+.website {
+    background-color: rgb(255, 85, 190);
+}
+
+.sales {
+    background-color: rgb(218, 248, 85);
+}
