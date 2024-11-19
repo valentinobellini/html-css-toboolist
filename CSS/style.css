@@ -1,0 +1,33 @@
+/* general style rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+
+/* header style */
+header {
+    background-color: white;
+    height: 100px;
+}
+
+header img {
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+header span {
+    color: black;
+    font-size: 40px;
+    font-family: montserrat;
+    font-weight: 800;
+}
+
+
