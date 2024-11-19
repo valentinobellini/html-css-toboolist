@@ -113,6 +113,8 @@ section span::before {
 
   .task, .task_done {
     margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
   }
 
 
@@ -149,5 +151,5 @@ section span::before {
 }
 
 .sales {
-    background-color: rgb(218, 248, 85);
+    background-color: rgb(167, 197, 34);
 }
